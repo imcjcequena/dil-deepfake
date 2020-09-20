@@ -6,5 +6,5 @@ pip3 install virtualenv
 python3 -m virtualenv venv
 . venv/bin/activate
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirement.txt
 jupyter notebook
