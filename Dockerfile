@@ -8,7 +8,9 @@ WORKDIR /home/ubuntu/deepfake
 COPY . .
 
 # Install dependencies
+
 RUN apt-get update && \
+apt-get install -y apt-transport-https && \
 apt-get -y install torchvision && \
 apt-get -y install cudatoolkit=10.1 && \
 apt-get -y install pytorch && \
