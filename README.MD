@@ -9,7 +9,8 @@ Eg. If a person gets into a car accident and exaggerates his car’s damage by e
 This solution can be applied in the insurance industry or public sector to increase the efficiency and accuracy of processing workloads in high volumes.
 
 Setup
-St : 1 Create Pytorch 1.4 or 1.6 enabled EC2 instance
+
+St : 1 Create Pytorch 1.4 or 1.6 enabled EC2 instance(Deep Learning AMI (Ubuntu 18.04) Version 34.0)
 
 St : 2 Activate virtual environment : source activate pytorch_latest_p36
 
