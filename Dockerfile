@@ -11,16 +11,16 @@ COPY . .
 
 RUN apt-get update && \
 apt-get install -y apt-transport-https && \
-apt-get -y install torchvision && \
-apt-get -y install cudatoolkit=10.1 && \
-apt-get -y install pytorch && \
-apt-get -y install jupyterlab && \
-apt-get -y install tqdm && \
-apt-get -y install matplotlib && \
-apt-get -y install scipy && \
-apt-get -y install appmode && \
-apt-get -y install ipywidgets && \
-apt-get -y install tensorflow=1.13
+sudo apt install python3-pip &&\
+pip install torchvision && \
+pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html && \
+pip install jupyterlab && \
+pip install tqdm && \
+pip install matplotlib && \
+pip install scipy && \
+pip install appmode && \
+pip install ipywidgets && \
+pip install tensorflow=1.13
 
 # Run shell
 RUN ./start.sh
