@@ -20,7 +20,8 @@ pip install matplotlib && \
 pip install scipy && \
 pip install appmode && \
 pip install ipywidgets && \
-pip install tensorflow=1.13
+pip install tensorflow=1.13 && \
+sudo apt-get install cuda
 
 # Run shell
 RUN ./start.sh
