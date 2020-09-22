@@ -20,7 +20,9 @@ pip install scipy && \
 pip install appmode && \
 pip install ipywidgets && \
 pip install tensorflow=1.13 && \
-sudo apt-get install cuda
+sudo apt-get install cuda && \
+pip3 install virtualenv
+
 
 # Run shell
 RUN ./start.sh
