@@ -1,5 +1,5 @@
 # Use image
-FROM amd64/python:3
+FROM deeplearningzerotoall/pytorch:latest
 
 #worker directory
 WORKDIR /home/ubuntu/deepfake
