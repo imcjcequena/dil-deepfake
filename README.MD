@@ -34,15 +34,13 @@ St : 9 Generate Jupyter notebook configuration
       jupyter notebook --generate-config
       cd ~/.jupyter/
       vi jupyter_notebook_config.py
-      c = get_config()
-      
+        
       #Add configuration
-      
+      c = get_config()
       c.IPKernelApp.pylab = 'inline' 
       c.NotebookApp.ip = '*'
       c.NotebookApp.open_browser = False 
       c.NotebookApp.port = 8888
-
 
 St : 10 Enter command jupyter notebook password to set password for your notebook instead of token
 
