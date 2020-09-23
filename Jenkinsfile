@@ -10,6 +10,9 @@ pipeline {
     ECRCRED = 'ecr:ap-southeast-2:ccequena'
 			
 	}
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '3', artifactNumToKeepStr: '3'))
+    }
 	stages {
 	    stage('Submit Stack') {
             steps {
