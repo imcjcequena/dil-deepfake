@@ -1,5 +1,5 @@
 # Use image
-FROM 763104351884.dkr.ecr.ap-southeast-2.amazonaws.com/pytorch-inference:1.6.0-gpu-py36-cu101-ubuntu16.04
+FROM cjcequena0617/pytorch-ubuntu
 
 #worker directory
 WORKDIR /home/ubuntu/deepfake
