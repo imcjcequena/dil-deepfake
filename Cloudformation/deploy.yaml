@@ -51,6 +51,8 @@ Resources:
       HealthCheckTimeoutSeconds: 5
       UnhealthyThresholdCount: 2
       HealthyThresholdCount: 2
+      Matcher:
+        HttpCode: "200-400"
       Name: !Join ["", [!Ref Subdomain, TargetGroup]]
       Port: !Ref ContainerPort
       Protocol: HTTP
