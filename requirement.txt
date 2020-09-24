@@ -14,5 +14,5 @@ torch-model-archiver==0.2.1
 torchserve==0.2.1
 torchvision==0.7.0
 tqdm==4.42.1
-conda install -c anaconda cudatoolkit
+
 

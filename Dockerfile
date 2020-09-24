@@ -8,16 +8,15 @@ WORKDIR /home/ubuntu/deepfake
 COPY . .
 
 # Install dependencies
-
-RUN apt-get update && \
-apt-get install -y apt-transport-https 
-
-# Start the app
-RUN source activate pytorch_latest_p36
-RUN cd inp-deep-fake-detection/
+CMD source activate pytorch_latest_p36
 RUN conda install -c conda-forge appmode
+RUN conda install jupyter
+# Start the app
 
 # Run shell
-RUN ./start.sh
+RUN chmod +x ./start.sh
+CMD ./start.sh
 
-EXPOSE 8890
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+
+EXPOSE 8888
