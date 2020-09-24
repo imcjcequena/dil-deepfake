@@ -16,7 +16,7 @@ Parameters:
     Default: "arn:aws:acm:ap-southeast-2:708988062417:certificate/f17b1476-aa61-46c8-a420-8a3786402921"
   ContainerPort:
     Type: Number
-    Default: 8890
+    Default: 8888
   LoadBalancerPort:
     Type: Number
     Default: 443
